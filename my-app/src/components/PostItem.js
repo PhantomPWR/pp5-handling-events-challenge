@@ -2,9 +2,9 @@ import React from 'react'
 import css from './css/PostItem.module.css'
 
 function PostItem(props) {
-    const savedPosts = props.post
+    const filteredPosts = props.post
   return (
-    savedPosts.map(post => {
+    filteredPosts.map(post => {  
         const {name, title, description, image} = post
         return (
             <div key={title} className={css.SearchItem}>
