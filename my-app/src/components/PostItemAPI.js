@@ -5,13 +5,13 @@ function PostItem(props) {
     const filteredPosts = props.post
   return (
     filteredPosts.map(post => {  
-        const {name, title, description, image} = post
+        const {id, type, user, webformatURL, tags} = post
         return (
-            <div key={title} className={css.SearchItem}>
-                <p>Title: {title}</p>
-                <p>Artist: {name}</p>
-                <img src={image} alt={title} />
-                <p>Description: {description}</p>
+            <div key={id} className={css.SearchItem}>
+                <p>Artwork Type: {type}</p>
+                <p>Artist: {user}</p>
+                <img src={webformatURL} alt={tags} />
+                <p>Tags: {tags}</p>
             </div>
         )
     })
