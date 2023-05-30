@@ -2,7 +2,7 @@ import css from './App.module.css';
 import Sidebar from "./components/Sidebar";
 import NavBarForm from './components/NavBarForm';
 // import Content from './components/Content';
-import Content from './components/ContentAPI';
+import Content from './components/ContentAPIHooks';
 
 function App() {
   return (
